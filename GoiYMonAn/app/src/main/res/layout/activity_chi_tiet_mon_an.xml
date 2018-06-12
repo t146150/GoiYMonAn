@@ -1,0 +1,135 @@
+<android.support.v4.widget.DrawerLayout android:layout_height="match_parent"
+android:layout_width="match_parent"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/myDrawerLayout"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--<fragment-->
+    <!--android:id="@+id/fragmentMain"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"></fragment>-->
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/mainContent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/imageviewSanPhamDetail"
+            android:layout_width="160dp"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:id="@+id/textviewTenSPDetail"
+            android:layout_marginTop="38dp"
+            android:textSize="24sp"
+            android:textColor="#ff00"
+            android:text="Tên Món Ăn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageviewSanPhamDetail"
+            android:layout_toEndOf="@+id/imageviewSanPhamDetail" />
+        <TextView
+            android:layout_below="@id/textviewTenSPDetail"
+            android:id="@+id/textviewGiaDetail"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/imageviewSanPhamDetail"
+            android:textSize="24sp"
+            android:textColor="#4400ff"
+            android:text="111111111111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonSua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageviewSanPhamDetail"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Sửa" />
+        <Button
+            android:id="@+id/buttonXoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textviewThongTin"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/imageviewSanPhamDetail"
+            android:layout_toRightOf="@+id/imageviewSanPhamDetail"
+            android:text="Xóa" />
+        <TextView
+            android:id="@+id/textviewThongTin"
+            android:textColor="#d25057"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:padding="5dp"
+            android:layout_below="@id/buttonSua"
+            android:text="Thông tin chi tiết"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textviewThongTin">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textviewMoTa"
+                    android:textColor="#2b2525"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+
+                    android:text="Mô tả của sản phầm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+<!-- design -->
+<android.support.design.widget.NavigationView
+    android:id="@+id/myNavigationView"
+    app:headerLayout="@layout/header_navi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:menu="@menu/menu_navi"
+    android:layout_gravity= "start"
+    app:itemTextColor="#0015ff">
+
+</android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>
+
+

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "791918528781",
+    "firebase_url": "https://goiymonan.firebaseio.com",
+    "project_id": "goiymonan",
+    "storage_bucket": "goiymonan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791918528781:android:795770d5c18a4662",
+        "android_client_info": {
+          "package_name": "com.minhduc.goiymonan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "791918528781-87i5f4cth96mp571tu1hqlo85li3q3qn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.minhduc.goiymonan",
+            "certificate_hash": "1a68f24bad0791f4cbfeaf585317a675ce114eb9"
+          }
+        },
+        {
+          "client_id": "791918528781-3s3vq7cbd5laesd89idpl906n1qkg6kr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUVF0VOivBPIg41AiyIBUgo9ad7533RPk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "791918528781-3s3vq7cbd5laesd89idpl906n1qkg6kr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

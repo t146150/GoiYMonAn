@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myDrawerLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.minhduc.goiymonan.User.ContactActivity">
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/myToolbarUser"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+        </android.support.v7.widget.Toolbar>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textSuaSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Đảm Bảo Hài Lòng"
+                android:textColor="#ff6f00"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/cook"
+                android:layout_below="@+id/textSuaSP"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imageView"
+                android:textColor="#060606"
+                android:layout_marginTop="35dp"
+                android:text="Chất lượng
+“Gợi Ý Món Ăn” do công ty ChicChic cung cấp các giải pháp đề xuất các món ăn cho mỗi bữa ăn hàng ngày từ đó người dùng có thể mua các nguyên liệu để chế biến món ăn từ công ty.
+Phục vụ
+ChicChic cam kết chất lượng phục vụ tốt nhất, chuyên nghiệp nhất cho mọi khách hàng.
+Hỗ trợ
+Nếu bạn gặp rắc rối về sản phẩm hay chất lượng dịch vụ của ChiChic hãy gọi ngay đến số 0909.000.000 hoặc inbox ở fanpage facebook.com/www.chichic.vn
+Đặt hàng và thu tiền tận nơi toàn quốc
+0909.000.000
+
+
+
+"
+
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!-- design -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/myNavigationViewUser"
+        app:headerLayout="@layout/header_navi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:menu="@menu/menu_navi_user"
+        android:layout_gravity= "start"
+        app:itemTextColor="#0015ff">
+
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>
+

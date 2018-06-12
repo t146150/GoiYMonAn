@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+
+        android:title="Trang Chủ"
+        android:id="@+id/menuTrangChu"
+        android:icon="@android:drawable/ic_dialog_alert"
+        />
+    <item
+
+        android:title="Hướng Dẫn Nấu Ăn"
+        android:id="@+id/menuVideo"
+        android:icon="@android:drawable/ic_delete"
+        />
+
+    <item
+        android:title="Giỏ Hàng"
+        android:id="@+id/menuGioHang"
+        android:icon="@android:drawable/ic_delete"
+        />
+
+    <item
+    android:title="Contact"
+    android:id="@+id/menuContact"
+    android:icon="@android:drawable/presence_audio_away"
+    />
+
+
+    <item
+
+        android:title="Đăng xuất"
+        android:id="@+id/menuDangXuat"
+        android:icon="@android:drawable/ic_delete"
+        />
+
+</menu>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.minhduc.goiymonan.ChiTietGioHangActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/imageviewGioHangDetail"
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:src="@drawable/giohang"/>
+
+        <TextView
+            android:id="@+id/textviewGioHangDetail"
+            android:layout_marginTop="38dp"
+            android:textSize="24sp"
+            android:textColor="#ff00"
+            android:text="Tên Món Ăn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageviewGioHangDetail"
+            android:layout_toEndOf="@+id/imageviewGioHangDetail" />
+        <TextView
+            android:layout_below="@id/textviewGioHangDetail"
+            android:id="@+id/textviewGiaGioHangDetail"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/imageviewGioHangDetail"
+            android:textSize="24sp"
+            android:textColor="#4400ff"
+            android:text="111111111111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@id/textviewGiaGioHangDetail"
+            android:id="@+id/textviewThoiGianDatMua"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/imageviewGioHangDetail"
+            android:textSize="18sp"
+            android:textColor="#9900ff"
+            android:text="Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textviewThongTinGioHang"
+            android:textColor="#d25057"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:padding="5dp"
+            android:text="Thông tin chi tiết"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/scrollView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageviewGioHangDetail"
+            android:id="@+id/scrollView2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textviewMoTaGioHangSanPham"
+                    android:textColor="#2b2525"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:text="Mô tả của sản phầm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/textviewThongTinKhacCuaGioHang"
+                    android:textColor="#2b2525"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:text="các thông tin khác giỏ hàng"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</RelativeLayout>

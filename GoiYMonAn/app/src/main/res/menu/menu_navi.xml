@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+
+        android:title="Trang Chủ"
+        android:id="@+id/menuTrangChu"
+        android:icon="@android:drawable/ic_delete"
+        />
+    <item
+
+        android:title="Danh sách đặt hàng"
+        android:id="@+id/menuDatHang"
+        android:icon="@android:drawable/ic_delete"
+        />
+    <item
+
+        android:title="Đăng xuất"
+        android:id="@+id/menuDangXuat"
+        android:icon="@android:drawable/ic_delete"
+        />
+
+
+</menu>

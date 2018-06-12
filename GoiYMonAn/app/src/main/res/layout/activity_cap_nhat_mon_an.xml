@@ -1,0 +1,133 @@
+<android.support.v4.widget.DrawerLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myDrawerLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!--<fragment-->
+        <!--android:id="@+id/fragmentMain"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"></fragment>-->
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/myToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+        </android.support.v7.widget.Toolbar>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/imageviewHinhSPSua"
+                android:layout_alignStart="@+id/imageviewHinhSPSua"
+                android:layout_below="@+id/myToolbar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textSuaSP"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="#ff00"
+                        android:textSize="30sp"
+                        android:text="Sửa Món Ănn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <Spinner
+                        android:layout_marginTop="10dp"
+                        android:minHeight="30dp"
+                        android:layout_below="@id/textSuaSP"
+                        android:id="@+id/spinnerLoaiSPSua"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></Spinner>
+
+                    <EditText
+                        android:id="@+id/editTextTenSPSua"
+                        android:layout_below="@id/spinnerLoaiSPSua"
+                        android:hint="Nhập Tên Món Ăn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/editTextGiaSPSua"
+                        android:layout_below="@id/editTextTenSPSua"
+                        android:hint="Nhập giá sản phẩm"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                    <EditText
+                        android:id="@+id/editTextMoTaSua"
+                        android:layout_below="@id/editTextGiaSPSua"
+                        android:hint="Nhập mô tả Món Ăn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="always"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"/>
+
+                    <ImageView
+                        android:src="@drawable/product_icon"
+                        android:id="@+id/imageviewHinhSPSua"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/editTextMoTaSua"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp" />
+
+                    <Button
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/imageviewHinhSPSua"
+                        android:id="@+id/buttonThemSPSua"
+                        android:text="Sửa Món Ăn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </LinearLayout>
+            </ScrollView>
+    </LinearLayout>
+
+            ‭
+
+
+
+
+    <!-- design -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/myNavigationView"
+        app:headerLayout="@layout/header_navi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:menu="@menu/menu_navi"
+        android:layout_gravity= "start"
+        app:itemTextColor="#0015ff">
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>
+

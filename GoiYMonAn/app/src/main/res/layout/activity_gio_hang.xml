@@ -1,0 +1,45 @@
+<android.support.v4.widget.DrawerLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myDrawerLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+    <LinearLayout
+        android:id="@+id/mainContentUser"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/myToolbarUser"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+        </android.support.v7.widget.Toolbar>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:padding="10dp"
+                android:id="@+id/listGioHang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ListView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!-- design -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/myNavigationViewGioHangUser"
+        app:headerLayout="@layout/header_navi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:menu="@menu/menu_navi_user"
+        android:layout_gravity= "start"
+        app:itemTextColor="#0015ff">
+
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>
+

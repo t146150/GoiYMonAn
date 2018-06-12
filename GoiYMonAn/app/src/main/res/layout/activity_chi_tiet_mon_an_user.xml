@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myDrawerLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.minhduc.goiymonan.User.ChiTietMonAnUserActivity">
+        <LinearLayout
+            android:id="@+id/mainContent"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/myToolbarUser"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+            </android.support.v7.widget.Toolbar>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:padding="5dp"
+                    android:id="@+id/imageviewSanPhamDetailUser"
+                    android:layout_width="160dp"
+                    android:layout_height="200dp" />
+
+                <TextView
+                    android:id="@+id/textviewTenSPDetailUser"
+                    android:layout_marginTop="38dp"
+                    android:textSize="24sp"
+                    android:textColor="#ff00"
+                    android:text="Tên Món Ăn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imageviewSanPhamDetailUser"
+                    android:layout_toEndOf="@+id/imageviewSanPhamDetailUser" />
+                <TextView
+                    android:layout_below="@id/textviewTenSPDetailUser"
+                    android:id="@+id/textviewGiaDetailUser"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/imageviewSanPhamDetailUser"
+                    android:textSize="24sp"
+                    android:textColor="#4400ff"
+                    android:text="món"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/buttonMuaUser"
+                    android:text="Mua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageviewSanPhamDetailUser"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp" />
+
+                <TextView
+                    android:id="@+id/textviewThongTinUser"
+                    android:textColor="#d25057"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:padding="5dp"
+                    android:layout_below="@id/imageviewSanPhamDetailUser"
+                    android:text="Thông tin chi tiết"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignEnd="@+id/buttonMuaUser"
+                    android:layout_alignRight="@+id/buttonMuaUser"
+                    android:layout_below="@+id/textviewThongTinUser"
+                >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                        <TextView
+                            android:id="@+id/textviewMoTaUser"
+                            android:textColor="#2b2525"
+                            android:textSize="20sp"
+                            android:padding="5dp"
+                            android:layout_below="@id/textviewThongTinUser"
+                            android:text="Mô tả của sản phầm"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                        </LinearLayout>
+                </ScrollView>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!-- design -->
+        <android.support.design.widget.NavigationView
+            android:id="@+id/myNavigationViewUser"
+            app:headerLayout="@layout/header_navi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:menu="@menu/menu_navi_user"
+            android:layout_gravity= "start"
+            app:itemTextColor="#0015ff">
+
+        </android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+

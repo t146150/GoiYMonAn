@@ -1,0 +1,74 @@
+<android.support.v4.widget.DrawerLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/myDrawerLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!--<fragment-->
+            <!--android:id="@+id/fragmentMain"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"></fragment>-->
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/myToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"
+            android:textColor="#dc001a"
+            android:textStyle="bold"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Nấu Gì Hôm Nay?" />
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageViewHinhMon"
+            />
+
+        <Button
+            android:id="@+id/buttonDoiMonAn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Chọn Món" />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listviewDanhSachLoai"
+            />
+
+    </LinearLayout>
+    <!-- design -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/myNavigationView"
+        app:headerLayout="@layout/header_navi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:menu="@menu/menu_navi"
+        android:layout_gravity= "start"
+        app:itemTextColor="#0015ff">
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.minhduc.goiymonan">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cook"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".LoaiMonAnActivity" />
+        <activity android:name=".NhapLoaiMonAnActivity"></activity>
+        <activity android:name=".MonAnActivity" />
+        <activity android:name=".NhapMonAnActivity"></activity>
+        <activity android:name=".User.ChiTietMonAnUserActivity" />
+        <activity android:name=".User.DatMuaActivity"></activity>
+        <activity android:name=".ChiTietMonAnActivity"></activity>
+        <activity android:name=".CapNhatMonAnActivity"></activity>
+        <activity android:name=".DangNhapActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".User.MonAnUserActivity" />
+        <activity android:name=".DanhSachMonNgonActivity" />
+        <activity android:name=".User.UserMainActivity"></activity>
+        <activity android:name=".User.GioHangActivity">
+
+        </activity>
+        <activity android:name=".User.ContactActivity" />
+        <activity android:name=".User.VideoActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity android:name=".User.PlayVideoActivity" />
+        <activity android:name=".User.DanhSachVideoActivity"></activity>
+        <activity android:name=".DanhSachDatHangActivity" />
+        <activity android:name=".ChiTietGioHangActivity"></activity>
+    </application>
+
+</manifest>

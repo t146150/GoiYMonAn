@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myDrawerLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.minhduc.goiymonan.User.DatMuaActivity">
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/myToolbarUser"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+        </android.support.v7.widget.Toolbar>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:textSize="30sp"
+                android:textColor="#d78125"
+                android:textStyle="bold"
+                android:text="Thông tin khách hàng" />
+
+            <EditText
+                android:id="@+id/editTextHoten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Nhập họ tên" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="Nhập Email"
+                android:layout_below="@+id/editTextHoten"
+                android:layout_alignLeft="@+id/editTextHoten"
+                android:layout_alignStart="@+id/editTextHoten" />
+
+            <EditText
+                android:id="@+id/editTextSoDienThoai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="Nhập Số Điện Thoại"
+
+                android:layout_marginTop="19dp"
+                android:layout_below="@+id/editTextEmail"
+                android:layout_alignLeft="@+id/editTextGhiChu"
+                android:layout_alignStart="@+id/editTextGhiChu" />
+
+            <EditText
+                android:id="@+id/editTextGhiChu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextSoDienThoai"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Ghi chú nếu có" />
+
+            <Button
+                android:id="@+id/buttonDatMua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:text="Đặt mua"
+                android:layout_below="@+id/editTextGhiChu"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!-- design -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/myNavigationViewUser"
+        app:headerLayout="@layout/header_navi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:menu="@menu/menu_navi_user"
+        android:layout_gravity= "start"
+        app:itemTextColor="#0015ff">
+
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>
+
